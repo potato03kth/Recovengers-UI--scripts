@@ -1,23 +1,16 @@
 using UnityEngine;
 
-public class test : MonoBehaviour
+public class ToggleViewCCTVCommand : MonoBehaviour
 {
-    private string myMassage;    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        print("hello");
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-    }
-
-
-    public string ReturnMassage()
-    {
-        return this.myMassage;
+        
     }
 }
