@@ -1,5 +1,6 @@
 using UnityEngine;
 using Command;
+using Dispatcher;
 
 namespace Dispatcher
 {
@@ -10,7 +11,7 @@ namespace Dispatcher
         
         public CommandDispatcher(GameObject dummy)
         {
-            Dummy = dummy
+            Dummy = dummy;
         }
 
         public ICommand GetCommand(ButtonActionType actionType)
@@ -22,9 +23,9 @@ namespace Dispatcher
                 case ButtonActionType.ToggleViewCCTVCommand:
                     return new ToggleViewCCTVCommand(Dummy);
                 case ButtonActionType.ToggleViewVibeNodeCommand:
-                    return new ToggleViewVibeNodeCommande(Dummy);
+                    return new ToggleViewVibeNodeCommand(Dummy);
                 case ButtonActionType.ToggleViewFireNodeCommand:
-                    return new ToggleViewFireNodeCommande(Dummy);
+                    return new ToggleViewFireNodeCommand(Dummy);
                 default:
                     // Debug.LogError("Unknown command type");
                     return null;

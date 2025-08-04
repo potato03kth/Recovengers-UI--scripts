@@ -13,7 +13,8 @@ namespace Command
 
         public void Excute()
         {
-            Dummy.DummyCall("OpenSetting");
+            // Dummy.DummyCall("OpenSetting");
+            DummyCommandBridge.Invoke("OpenSetting");
         }
 
         public void Undo()

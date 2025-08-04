@@ -1,16 +1,26 @@
 using UnityEngine;
-
-public class ToggleViewVibeNodeCommande : MonoBehaviour
+using Command;
+namespace Command
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class ToggleViewVibeNodeCommand : ICommand
     {
-        
-    }
+        private GameObject Dummy;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public ToggleViewVibeNodeCommand(GameObject dummy)
+        {
+            Dummy = dummy;
+        }
+
+        public void Excute()
+        {
+            // Dummy.DummyCall("OpenSetting");
+            DummyCommandBridge.Invoke("ToggleViewVibeNodeCommand");
+        }
+
+        public void Undo()
+        {
+            
+        }
+
     }
 }
