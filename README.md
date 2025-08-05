@@ -10,7 +10,7 @@
 
 ## CONTRIBUTION
 
-- check the [CONTRIBUTING](CONTRIBUTING) file
+- check the [CONTRIBUTING](CONTRIBUTING.md) file
 
 ## LICENSE
 
