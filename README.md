@@ -8,6 +8,10 @@
 - we use this repository as the primary VCS for stripe development and maintenance work, and the Unity VCS (PlasticSCM) as the primary VCS for other work (unity work).
 - Also, to maintain consistency across the entire project, we keep a history of the entire project in the “FirstOfAll” repository, backed up as a time series.
 
+## CONTRIBUTION
+
+- check the [CONTRIBUTING](CONTRIBUTING) file
+
 ## LICENSE
 
 - the code and this repository's license is under GNU General Public License v3.0
